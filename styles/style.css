@@ -1,0 +1,1015 @@
+@font-face {
+  font-family: "NeuzeitGro-Bla";
+  src: url("https://cdn.glitch.global/39499a7e-5c2b-49f6-9bd1-06596ce63bcf/Neuzeit%20Grotesk%20Black.ttf?v=1667485696894") format("truetype");
+}
+
+@font-face {
+  font-family: "FinoSans";
+  src: url("https://cdn.glitch.global/39499a7e-5c2b-49f6-9bd1-06596ce63bcf/fino-sans-bold.ttf?v=1667618273070");
+}
+
+@font-face {
+  font-family: "Navigo-Thin";
+  src: url("https://cdn.glitch.global/39499a7e-5c2b-49f6-9bd1-06596ce63bcf/NavigoThin.ttf?v=1666695645941") format("truetype");
+}
+
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("https://cdn.glitch.global/39499a7e-5c2b-49f6-9bd1-06596ce63bcf/BAHNSCHRIFT.TTF?v=1666695646238") format("truetype");
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  src: url("https://cdn.glitch.global/39499a7e-5c2b-49f6-9bd1-06596ce63bcf/SegoeUIVF.ttf?v=1667475132063");
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+
+  font-family: "FinoSans", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  padding-bottom: 20px;
+  background: white;
+}
+
+.cintilloImagenesInicio,
+.cintilloImagenesGaleria {
+  overflow: hidden;
+  background: black;
+}
+p {
+  font-family: "NeuzeitGro-Bla", sans-serif;
+}
+
+.cintilloImagenesGaleria > div > div > img {
+  height: 100%;
+  width: 100%;
+}
+
+.cintilloImagenesGaleria {
+  height: 522px !important;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  cursor: grab;
+  object-fit: cover;
+}
+
+.cartografia {
+  position: absolute;
+  z-index: -1;
+}
+
+h1 {
+  background: black;
+  color: white;
+}
+
+header {
+  display: none;
+  position: fixed; /* o fixed*/
+  background-color: #fff;
+  top: 0;
+  height: 60px;
+  width: 100vw;
+  z-index: 9;
+  text-align: center;
+}
+
+@media screen and (min-width: 960px) {
+  header {
+    position: absolute;
+    height: 155px;
+  }
+}
+
+#galeria {
+  margin-top: 40px;
+}
+
+#cartografia,
+#rosa {
+  margin-top: 5px;
+  width: 90%;
+}
+
+#baseMapa {
+  width: 90%;
+ 
+}
+
+#hamburger_switch {
+  display: block;
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background: url(https://cdn.glitch.global/39499a7e-5c2b-49f6-9bd1-06596ce63bcf/menuHamb.svg?v=1666769504614)
+    no-repeat;
+  background-size: 100%;
+}
+
+@media screen and (min-width: 960px) {
+  #hamburger_switch {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #hamburger_switch {
+    top: 53px;
+    left: 20px;
+    z-index: 99999;
+  }
+}
+
+ul li {
+  padding: 0;
+  display: block;
+  list-style: none;
+}
+
+.logos {
+  width: 50%;
+  display: inline;
+  padding: 5px;
+}
+
+.containerProartes {
+  text-align: center;
+}
+
+#logo {
+  display: block;
+  position: absolute;
+  background: url("https://cdn.glitch.global/39499a7e-5c2b-49f6-9bd1-06596ce63bcf/logo.svg?v=1667269023012")
+    no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  z-index: 999;
+  left: 50%;
+  top: 0px;
+  margin-left: -50px;
+  width: 100px;
+  height: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  #logo {
+    left: 50%;
+    top: 50px;
+    margin-left: -120px;
+    width: 200px;
+  }
+
+  .logos {
+    width: 50%;
+    display: inline;
+    padding: 5px;
+  }
+}
+
+#logo a {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  #logo a {
+    width: 200px;
+    height: 100px;
+  }
+}
+a:hover {
+  color:#7a2a97ff!important;
+}
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #1d1d1b;
+}
+a {
+  background: transparent;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+header h1 {
+  text-indent: -5000px;
+  display: none;
+}
+
+nav,
+section,
+summary {
+  display: block;
+}
+
+ul {
+  display: inline-block;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  text-transform: uppercase;
+  margin-right: 0;
+  text-align: center;
+  padding: 13px 0 10px 0;
+  background-color: #fff;
+  width: 100%;
+  line-height: 1;
+}
+
+nav ul li a,
+nav ul li a:active,
+nav ul li a:visited {
+  color: #1d1d1b;
+}
+
+nav ul li.active {
+  background-color: #1d1d1b;
+}
+nav ul li.active a,
+nav ul li:hover {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  nav ul {
+    margin-top: 155px;
+  }
+}
+
+nav ul {
+  display: none;
+  width: 100%;
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 960px) {
+  nav ul {
+    margin-top: 155px;
+    display: inline-block !important;
+    margin-top: 65px;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  nav ul li {
+    position: relative;
+    float: left;
+    padding: 0;
+    border: none;
+  }
+}
+@media screen and (min-width: 960px) {
+  nav ul li#nav-sub-galeria,
+  nav ul li#nav-sub-work {
+    text-align: right;
+    width: 15%;
+  }
+
+  nav ul li#nav-sub-about {
+    text-align: center;
+    width: 30%;
+  }
+
+  nav ul li#nav-sub-contacto {
+    text-align: center;
+    width: 40%;
+  }
+  nav ul li#nav-sub-insta {
+    text-align: left;
+    width: 15%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  
+}
+
+@media screen and (min-width: 960px) {
+  nav ul li.active a {
+    color: #1d1d1b;
+  }
+}
+
+.fino{
+  font-family:"FinoSans"!important;
+}
+
+.neuzeit{
+  font-family:"NeuzeitGro-Bla"!important;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 4vw;
+  padding: 78px 20px 20px 20px;
+}
+
+.svgMapa {
+  height: 30vh;
+}
+
+@media screen and (min-width: 960px) {
+  .titulo {
+    text-align: center;
+    font-size: 4.5vw;
+    padding: 168px 20px 20px 20px;
+  }
+  .titulo2 {
+    text-align: center;
+    font-size: 4.5vw;
+    padding: 20px;
+  }
+  nav ul li a {
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+  .svgMapa {
+    height: 110vh;
+    
+
+  }
+  
+  .activeYear  {
+    cursor:pointer;
+  }
+ /* #baseMapa > .svg-pan-zoom_viewport > g {
+    transform: translate(0,-30vh);
+  }*/
+  
+  
+  
+  
+   
+}
+
+main {
+  text-align: center;
+}
+
+/* modal */
+
+/* The Modal (background) */
+.modal_bk {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1001;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.modal {
+  display: none;
+  /* align-items: center; */
+  /* justify-content: center; */
+  position: absolute;
+  z-index: 1001;
+  width: 100%;
+  /* height: 100%; */
+  transform: translateY(-35vh);
+
+  text-align: left;
+}
+.modal[open] {
+  /*display: flex;*/
+  display: block;
+}
+@media screen and (min-width: 960px) {
+  .modal {
+    transform: translateY(-80vh);
+  }
+}
+
+.model-inner {
+  background-color: #f4f4f4;
+  border-radius: 0.5em;
+  max-width: 50vw;
+  padding: 5em;
+  margin: auto;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#modal-overlay {
+  width: 100%;
+  height: 100vh;
+  transform: translateY(-70vh);
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: block;
+}
+@media screen and (min-width: 960px) {
+  #modal-overlay {
+	height: 190vh;
+	transform: translateY(-135vh);
+}
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  font-family: sans-serif;
+  transform: translate(45vw, -3em);
+}
+
+.close:hover,
+.close:focus {
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.textoModalMapa {
+  
+  font-size: 16px;
+}
+
+.wt-content{
+  font-family: "NeuzeitGro-Bla", sans-serif!important;
+}
+
+.instruccion {
+  font-size: 19px;
+  
+}
+
+/* CAPAS DE SVGS */
+
+.noVisible {
+  display: none;
+  opacity: 0;
+}
+
+.year {
+  cursor: pointer;
+}
+
+
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  
+  85% {
+    opacity: 1;
+  }
+}
+
+
+.activeYear > g {
+  display: block;
+  animation: FadeIn 1s linear;
+  /*transition: opacity 0.51s;*/
+  animation-fill-mode: both; 
+  z-index:400;
+  cursor:pointer;
+    -webkit-transform: scale(1);
+    -webkit-transform-origin: 40% 40%;
+    -webkit-transition:.3s;
+    transform: scale(1);
+    transform-origin: 40% 40%;
+    transition:.3s;
+    transform-box: fill-box;
+} 
+
+.activeYear > g:hover {
+    -webkit-transform: scale(1.25);
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transition:.3s;
+    transform: scale(1.25);
+    transform-origin: 50% 50%;
+    transition:.3s;
+  
+}
+
+
+.activeYear > g:nth-child(1n) {
+  animation-delay: 0.5s;
+  transition-delay: 0.51s;
+}
+
+.activeYear > g:nth-child(2n) {
+  animation-delay: 0.7s;
+  transition-delay: 0.71s;
+}
+
+.activeYear > g:nth-child(3n) {
+  animation-delay: 0.9s;
+  transition-delay: 1s;
+}
+
+
+
+
+
+
+
+.activeYearLinea {
+  display: block;
+  animation: fade ease-in 1ms;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+}
+
+#lineaSimbologia {
+  width: 100%;
+  height: 14vh;
+}
+@media screen and (min-width: 960px) {
+  
+  
+  
+  
+  #lineaSimbologia {
+    height: 49vh;
+  }
+}
+
+#cuandoSvg {
+  width: 90%;
+  margin-bottom:20px;
+}
+
+/* preloader*/
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  /*#f1f2f3  You can change the background color and image URL here.  This solution works with animated .svg and animated .gif */
+  background: #ffff
+    url("https://cdn.glitch.global/39499a7e-5c2b-49f6-9bd1-06596ce63bcf/LogoCartografia.png?v=1667287565341")
+    no-repeat center center;
+  background-size: 30%;
+  /*background-size:30%;  https://cdn.glitch.global/39499a7e-5c2b-49f6-9bd1-06596ce63bcf/spinner.svg?v=1667287229529*/
+}
+#preloader > embed {
+  margin: auto;
+}
+
+/* galeria de fotos*/
+
+gallery_old {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+  background: black;
+}
+
+.gallery > div {
+  grid-column: span 2;
+  grid-row: span 2;
+  height:100vh;
+  /*margin-left:10px;*/
+}
+
+.gallery > article {
+  background: black;
+  grid-column: span 1;
+  grid-row: span 2;
+  margin: auto 40px auto;
+  padding: 0 40px;
+  color: white;
+  text-align:justify;
+  overflow-wrap: break-word;
+  hyphens: manual;
+  max-height:95vh;
+  overflow-y:hidden;
+  line-height: 1.25;
+}
+
+
+
+.gallery > article > h2,
+.gallery > article > strong > p {
+  font-family: "SegoeUI", sans-serif;
+      font-weight: bold;
+  
+}
+
+.gallery > article > h2 {
+  font-size:30px;
+}
+
+.gallery > article > strong > p, .gallery > article > p {
+  font-size:14px;
+  font-weight: bold;
+}
+
+.logoFinal {
+  margin: 50px;
+    width: 200px;
+    display: inline;
+}
+
+.cuadrosTexto {
+  width: 40vw;
+  margin: auto;
+  text-align: justify;
+  font-family: "NeuzeitGro-Bla", sans-serif;
+}
+
+
+
+.center {
+  text-align:center!important;
+}
+
+h2, .grande {
+ font-size:56px; 
+}
+
+.medio {
+  font-size:30px; 
+}
+
+.galeriaImg img,
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.galeriaImg img,
+.swiper-slide img {
+  object-fit: cover;
+}
+
+.container {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.swiper-slide:hover .overlay {
+  opacity: 1;
+}
+
+
+.m40 {
+  margin:40px;
+}
+
+.m80{
+  margin:80px;
+}
+
+.p40 {
+  padding:40px;
+}
+
+.gris{
+  background:#f4f4f4ff;
+}
+
+.morado{
+  color:#7a2a97ff;
+}
+
+.verde{
+  color:#cce310ff;
+}
+
+.contacto {
+  width:40vw;
+  margin:auto;
+}
+
+.creditos {
+  font-size:19px;
+}
+
+.left {
+  text-align:left;
+}
+
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #aaa;
+}
+
+::-webkit-scrollbar-thumb {
+    background:#cce310ff;
+    -webkit-border-radius: 1ex;
+}
+
+.imgInfo {
+  width: 40%;
+  margin-top:40px;
+  display:inline;
+}
+
+#acerca {
+  margin:auto;
+  text-align:center;
+}
+
+.tituloCreditos {
+  margin-bottom:40px;
+}
+
+
+#back2Top {
+  text-align:center;
+  cursor: pointer;
+}
+
+.imgContacto {
+  width: 55%;
+  margin-top:40px;
+  display:inline;
+}
+
+#lineaNaranja {
+  margin-top:80px;
+    margin-bottom:80px;
+}
+
+.acercaVideo {
+	width: 50vw;
+  height:50vw;
+	margin: auto;
+	padding: 40px;
+}
+
+
+/* web tour */
+
+
+.left-start{
+  left:30px!important;
+}
+
+.right-start {
+    top: 1054px!important;
+  left:75vw!important;
+    right: 60px!important;
+
+}
+
+
+.wt-btns, .wt-btn-next {
+  background:#cce310ff!important;
+}
+
+
+#mapa {
+	position: absolute!important;
+	transform: translate(0,-300px);
+}
+
+
+
+/*
+mobile
+
+
+*/
+@media screen and (max-width: 768px) {
+
+.modal {
+	display: none;
+	/* align-items: center; */
+	/* justify-content: center; */
+	position: absolute;
+	z-index: 1001;
+	width: 100%;
+	/* height: 100%; */
+	/*transform: translateY(-42vh);*/
+	text-align: left;
+}
+.model-inner {
+	background-color: #f4f4f4;
+	border-radius: 0.5em;
+	max-width: 100vw; 
+	padding: 2em;
+	margin: auto;
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+}
+
+.close {
+	color: black;
+	font-size: 50px;
+	font-weight: bold;
+	position: absolute;
+	font-family: sans-serif;
+	transform: translate(80vw, -0.5em);
+}
+
+.textoModalMapa {
+	font-size: 14px;
+}
+
+.instruccion {
+	font-size: 16px;
+}
+
+ .logos {
+	width: 100%;
+	display: inline;
+	padding: 5px;
+} 
+  .imgInfo {
+	width: 90%;
+	margin-top: 40px;
+	display: inline;
+}
+  .cuadrosTexto {
+	width: 90vw;
+	margin: auto;
+	text-align: justify;
+	font-family: "NeuzeitGro-Bla", sans-serif;
+}
+  
+  .imgContacto {
+	width: 100%; 
+	margin-top: 0px;
+	display: inline;
+}
+  
+  .acercaVideo {
+	width: 100vw;
+	height: 100vw;
+	margin: auto;
+	padding: 10px;
+}
+  
+  .gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
+	background: black;
+}
+  
+  .gallery > div {
+	grid-column: span 2;
+	grid-row: span 2;
+	height: 50vh;
+	/* margin-left: 10px; */
+}
+  
+  .gallery > article {
+	display: none;
+}
+  
+  /*.gallery > article {
+	background: black;
+	grid-column: span 2;
+	grid-row: span 2;
+	margin: 10px;
+	padding: 10px;
+	color: white;
+	text-align: justify;
+	overflow-wrap: break-word;
+	hyphens: manual;
+	max-height: 90vh;
+	overflow-y: auto;
+}*/
+  
+  .cintilloImagenesGaleria {
+	height: 412px !important;
+
+    
+}
+  
+  .overlay {
+	
+	/*display: none;*/
+}
+  
+  #preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  /*#f1f2f3  You can change the background color and image URL here.  This solution works with animated .svg and animated .gif */
+  background: #ffff
+    url("https://cdn.glitch.global/39499a7e-5c2b-49f6-9bd1-06596ce63bcf/LogoCartografia.png?v=1667287565341")
+    no-repeat center center;
+  background-size: 70%;
+  /*background-size:30%;  https://cdn.glitch.global/39499a7e-5c2b-49f6-9bd1-06596ce63bcf/spinner.svg?v=1667287229529*/
+}
+  
+  .right {
+	top: 352.5px!important;
+}
+
+  .right-start {
+	top: 352.5px!important;
+    left:30px!important;
+}
+  
+  .svg-pan-zoom-control:nth-child(1) {
+    display: none;
+  }
+  
+  .svg-pan-zoom-control:nth-child(3) {
+    display: none;
+  }
+  
+  
+}
+
+#svg-pan-zoom-controls {
+transform:translate(1341 0) scale(0.75)!important;  
+}
