@@ -534,10 +534,10 @@ main {
 } 
 
 .activeYear > g:hover {
-    -webkit-transform: scale(1.25);
+    -webkit-transform: scale(1.45);
     -webkit-transform-origin: 50% 50%;
     -webkit-transition:.3s;
-    transform: scale(1.25);
+    transform: scale(1.45);
     transform-origin: 50% 50%;
     transition:.3s;
   
